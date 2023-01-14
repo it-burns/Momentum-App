@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    /* border: 1px solid white; */
+}
+html {
+    height: 100vh
+}
+body {
+    height: 100%;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#background {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url('https://picsum.photos/1920/1080');
+}
+
+input[type=text]:not(:read-only) {
+    border: none;
+    border-bottom: 2px solid #CCC;
+}
+input[type=text]:not(:read-only):focus {
+    outline: none;
+    border-bottom: 2px solid #fff;
+}
+
+#home-container {
+    min-width: 200px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background: radial-gradient(circle, rgba(0, 0, 0, 0.4), transparent); */
+    text-shadow: 2px 2px 4px #000000;
+}
+#home-container #heading-content {
+    width: 100%;
+    text-align: center;
+    line-height: 80px;
+    font-size: 3rem
+}
+#home-container .text-input{
+    width: 100%;
+    line-height: 80px;
+    padding-top: 2rem;
+}
+#home-container .text-input #name-input {
+    width: inherit;
+    line-height: inherit;
+    background: transparent;
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#main-container {
+    position: relative;
+    height: 100vh;
+    max-width: 790px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background: radial-gradient(circle, rgba(0, 0, 0, 0.4), transparent); */
+    text-shadow: 2px 2px 4px #000000;
+}
+#main-container #clock-container {
+    font-size: 8rem;
+}
+#main-container #greetings-container {
+    font-size: 3.3rem;
+}
+#new-focus-container {
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 2rem;
+}
+#new-focus {
+    position: absolute;
+    bottom: 13rem;
+    width: auto;
+    text-align: center;
+    display: none;
+}
+#focus-crud, .todo-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+#methods {
+    letter-spacing: 0.5rem;
+}
+#new-focus #focus-text {
+    font-size: 1.5rem;
+}
+#dos-today {
+    width: 100%;
+    line-height: 50px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    border: none;
+    border-bottom: 2px solid #CCC;
+    outline: none;
+    background: transparent;
+    text-align: center;
+    font-size: 2rem;
+}
+#todo {
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+    cursor: pointer;
+    display: none;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#quotes {
+    position: absolute;
+    bottom: 2rem;
+    display: none;
+    max-width: 70%;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#todo-container {
+    position: absolute;
+    right: 2rem;
+    bottom: 5rem;
+    width: 350px;
+    min-height: 200px;
+    display: grid;
+    align-items: center;
+    background: black;
+    border-radius: 7px;
+    display: none;
+}
+#todo-container::after{
+    display: none;
+}
+#addTodoText {
+    text-align: center;
+    margin-top: 3rem;
+}
+#newTodoBtn {
+    background: #C48888;
+    line-height: 2rem;
+    width: 6rem;
+    justify-self: center;
+    margin-top: -10px;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+#list-container {
+    max-height: 500px;
+    overflow-y: auto;
+    margin-top: 1rem;
+    padding: 0 1rem 1rem;
+}
+#new-todo-input {
+    align-self: end;
+    line-height: 2rem;
+    padding-left: 10px;
+    background: transparent;
+    font-size: 1rem;
+    visibility: hidden;
+}
+.todos {
+    padding-bottom: 0.5rem;
+}
+
+.content {
+    border: 0;
+    outline: none;
+    background-color: rgb(29, 28, 28);
+    width: 100%;
+    color: #fff;
+    font-size: 1rem;
+}
+.content:focus:not(:read-only) {
+    color: #C48888;
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Momentum App</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src="https://kit.fontawesome.com/80b7e46067.js" crossorigin="anonymous"></script>
+    
+    
+</head>
+<body>
+    
+    <div id="background"></div>
+
+    <div id="home-container">
+        <div id="heading-content" class="heading-font">
+            <div id="name-heading">Hi, what is your name?</div>
+        </div>
+        <div class="text-input">
+            <input type="text" id="name-input" autocomplete="off" autofocus required>
+        </div>
+    </div>
+
+    <div id="main-container">
+        <div id="clock-container"></div>
+        <span id="greetings-container"></span>
+        
+        <div id="new-focus-container">
+            <h3>What is your main focus for today?</h3>
+            <input type="text" name="dos-today" id="dos-today" class="dos-today" autocomplete="off" autofocus required>
+        </div>
+
+        <div id="new-focus">
+            <h3>Today</h3>
+            <div id="focus-crud">
+                <input id="focus-chckbx" type="checkbox"><span id="focus-text"></span><span id="methods"><i id="update" class="fa-regular fa-pen-to-square"></i><i id="delete" class="fa-solid fa-x"></i></span>
+            </div>
+        </div>
+
+    </div>
+
+    <span id="quotes"></span>
+
+    <span id="todo">Todo</span>
+    <div id="todo-container">
+        <span id="addTodoText">Add a todo to get started</span>
+        <button id="newTodoBtn">New Todo</button>
+        <div id="list-container"></div>
+        <input type="text" id="new-todo-input" placeholder="Add todo" autocomplete="off">
+    </div>
+
+    <script src='main.js'></script>
+    <script src='time.js'></script>
+    <script src='done.js'></script>
+    <script src='update.js'></script>
+    <script src='delete.js'></script>
+    <script src='quotes.js'></script>
+    <script src='todo.js'></script>
+</body>
+</html>
